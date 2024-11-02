@@ -4,7 +4,7 @@ def is_prime(n):
 def find_prime_sums(target, primes, curr_sum=0, combo=None, start=0):
     combo = combo or []
     if curr_sum == target:
-        return [combo]
+        return [combo] 
     return [new_combo 
             for i in range(start, len(primes)) 
             if curr_sum + primes[i] <= target 
